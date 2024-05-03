@@ -299,6 +299,7 @@ li {
   justify-content: center;
   align-items: center;
   min-width: 160px;
+  margin-left: auto;
   font-size: 1em;
   display: flex;
 }
@@ -320,14 +321,13 @@ li {
   justify-content: center;
   align-items: center;
   margin-right: 20px;
-  display: flex;
 }
 
 .brand.w--current {
   color: inherit;
   flex: none;
-  margin-right: auto;
   padding-right: 30px;
+  display: flex;
 }
 
 .section {
@@ -758,10 +758,11 @@ li {
 }
 
 .navbar-logo {
-  flex: none;
   width: 100%;
   margin-bottom: -.1em;
-  position: relative;
+  line-height: 0;
+  position: absolute;
+  top: 0;
 }
 
 .hero {
@@ -927,7 +928,9 @@ li {
 
 .view-more-text {
   color: var(--dark-slate-gray);
+  text-align: center;
   max-width: 940px;
+  margin-bottom: 20px;
   font-size: 1.2em;
 }
 
@@ -1072,12 +1075,9 @@ li {
 }
 
 .logo-block {
-  flex: none;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
   font-size: 2.4em;
   position: relative;
 }
@@ -1367,6 +1367,12 @@ li {
   display: none;
 }
 
+.logo-placeholder {
+  opacity: 0;
+  height: min(6vh, 80px);
+  min-height: 50px;
+}
+
 @media screen and (max-width: 991px) {
   .nav-link {
     padding-left: 20px;
@@ -1493,10 +1499,6 @@ li {
     font-size: 1em;
   }
 
-  .logo-wrap {
-    max-width: min(220px, 24vw);
-  }
-
   .logo-block {
     max-height: 80px;
     font-size: 2em;
@@ -1529,6 +1531,10 @@ li {
 
   .inquiries-section-img {
     min-height: 30vh;
+  }
+
+  .logo-placeholder {
+    height: min(6vh, 60px);
   }
 }
 
@@ -1607,6 +1613,7 @@ li {
   .menu-button {
     justify-content: center;
     align-items: center;
+    margin-left: auto;
     margin-right: -10px;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -1692,16 +1699,16 @@ li {
     font-size: 1.3em;
   }
 
+  .view-more-text {
+    font-size: 1.1em;
+  }
+
   .services-category-wrap {
     grid-template-columns: 1fr;
   }
 
   .section-header {
     font-size: 2.2em;
-  }
-
-  .logo-wrap {
-    max-width: none;
   }
 
   .logo-block {
@@ -1728,6 +1735,11 @@ li {
 
   .inquiries-section-grid {
     grid-template-columns: 1fr;
+  }
+
+  .logo-placeholder {
+    height: 45px;
+    min-height: 45px;
   }
 }
 
@@ -1774,6 +1786,11 @@ li {
 
   .container {
     max-width: none;
+  }
+
+  .container.inquiries {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .centered-heading {
