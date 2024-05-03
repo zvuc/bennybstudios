@@ -370,11 +370,11 @@ li {
 }
 
 .section.image.main-page._1 {
-  background-image: url('../images/_DSC6523.jpg');
+  background-image: url('../images/DSC6523.jpg');
 }
 
 .section.image.main-page._2 {
-  background-image: url('../images/_DSC6525.jpg');
+  background-image: url('../images/DSC6525.jpg');
 }
 
 .section.image.main-page.intro {
@@ -488,7 +488,7 @@ li {
 
 .slide {
   text-align: center;
-  background-image: url('../images/_DSC6523.jpg');
+  background-image: url('../images/DSC6523.jpg');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -950,7 +950,7 @@ li {
 }
 
 .full-page-image._1 {
-  background-image: url('../images/_DSF2539-Edit.jpg');
+  background-image: url('../images/studio_main.jpg');
   background-size: cover;
   background-attachment: scroll;
   width: 100vw;
@@ -960,13 +960,13 @@ li {
 }
 
 .full-page-image._2 {
-  background-image: url('../images/_DSC6523.jpg');
+  background-image: url('../images/DSC6523.jpg');
   background-size: cover;
   background-attachment: scroll;
 }
 
 .full-page-image._3 {
-  background-image: url('../images/_DSF2568.jpg');
+  background-image: url('../images/DSF2568.jpg');
   background-position: 50% 0;
   background-size: cover;
   background-attachment: scroll;
@@ -1355,7 +1355,7 @@ li {
 .inquiries-section-img {
   opacity: .6;
   filter: grayscale();
-  background-image: url('../images/_DSF2764.jpg');
+  background-image: url('../images/DSF2764.jpg');
   background-position: 50%;
   background-size: cover;
   width: 100%;
@@ -1703,6 +1703,18 @@ li {
     font-size: 1.1em;
   }
 
+  .full-page-image._1 {
+    background-image: url('../images/studio_main.jpg');
+  }
+
+  .full-page-image._2 {
+    background-image: url('../images/DSC6523.jpg');
+  }
+
+  .full-page-image._3 {
+    background-image: url('../images/DSF2568.jpg');
+  }
+
   .services-category-wrap {
     grid-template-columns: 1fr;
   }
@@ -1735,6 +1747,10 @@ li {
 
   .inquiries-section-grid {
     grid-template-columns: 1fr;
+  }
+
+  .inquiries-section-img {
+    background-image: url('../images/DSF2764.jpg');
   }
 
   .logo-placeholder {
