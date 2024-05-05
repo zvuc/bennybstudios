@@ -3,10 +3,11 @@
   --accent: #272c6b;
   --dark-slate-gray-2: #303032;
   --navbar-text-color: white;
-  --navbar-bg-color-opaque: #000;
+  --navbar-bg-color-opaque: #111;
   --container-padding: 30px;
-  --navbar-bg-color: rgba(0, 0, 0, .5);
+  --navbar-bg-color: rgba(17, 17, 17, .9);
   --light-gray: #66666b;
+  --page-bg: #111;
   --navbar-height: 120px;
   --dark-slate-gray: #49494d;
 }
@@ -734,7 +735,7 @@ li {
 }
 
 .body {
-  background-color: #111;
+  background-color: var(--page-bg);
 }
 
 .paragraph {
@@ -1243,7 +1244,7 @@ li {
   bottom: 0%;
   left: 0%;
   right: 0%;
-  box-shadow: inset 0 -1px rgba(0, 0, 0, .1);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, .3);
 }
 
 .navbar-bg-overlay {
@@ -1431,6 +1432,11 @@ li {
     font-size: 1.1em;
   }
 
+  .navbar {
+    height: min(10vh, 100px);
+    min-height: 80px;
+  }
+
   .nav-link {
     padding-left: 20px;
     padding-right: 20px;
@@ -1564,7 +1570,7 @@ li {
   }
 
   .logo-block {
-    max-height: 80px;
+    max-height: 70px;
     font-size: 2em;
   }
 
@@ -1604,6 +1610,7 @@ li {
 
   .logo-placeholder {
     height: min(6vh, 60px);
+    max-height: 50px;
   }
 }
 
